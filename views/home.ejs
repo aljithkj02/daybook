@@ -1,0 +1,9 @@
+<%- include('partials/header') -%>
+<h5 class="text-center h1Date"><%=date %></h5>
+<h1>Home</h1>
+<h5 class="pHome"> <%= hContent %> </h5>
+<% for(let post of posts){ %>
+    <h1 class="h1Post"><%= post.title %> </h1>
+    <p> <%= post.post.substring(0,60)+'...'%><a id="readMore" href="/posts/<%= post.title %>">Read More</a> </p>
+<%}%>
+<%- include('partials/footer') -%>

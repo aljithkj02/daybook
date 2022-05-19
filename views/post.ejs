@@ -1,0 +1,13 @@
+<%- include('partials/header') -%>
+    <form action="/delete" method="post">
+        <h1 class="home h1Post">
+            <%= postTitle %>
+        </h1>
+        <h6>
+            <%= postBody %>
+        </h6>
+        <input type="hidden" name="postName"  value="<%= postTitle %>">
+        <button class="btn btn-outline-danger  postButton" type="submit">Delete</button>
+        <a class="links" href="/"><button class="btn btn-outline-primary  postButton ms-3" type="button">Home</button></a>
+    </form>
+    <%- include('partials/footer') -%>

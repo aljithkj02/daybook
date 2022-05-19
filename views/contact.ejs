@@ -1,0 +1,42 @@
+<%- include('partials/header') -%>
+    <h1 class="home">Contact</h1>
+    <p class="pHome text-center mt-5">
+        <%= cContent %>
+    </p>
+    <p class="text-center">
+        <a href="https://in.linkedin.com/in/aljith-kj-033213233?trk=public_profile_browsemap"><i
+                class="fa-brands fa-linkedin fa-2x socialM tt"></i></a>
+        <a href="https://www.instagram.com/ig_deathlok/?igshid=YmMyMTA2M2Y="><i
+                class="fa-brands fa-instagram fa-2x insta socialM"></i></a>
+        <a href=" https://twitter.com/KjAljith?t=xUdJPuxtaQVrFpPvzOcanQ&s=09"><i
+                class="fa-brands fa-twitter fa-2x socialM tt"></i></a>
+    </p>
+
+
+    <main class="form-signin text-center">
+        <form action="/mail" method="post">
+            <h1 class="h3 mb-3 fw-normal">Stay connect with us!</h1>
+
+            <div class="form-floating">
+                <input type="text" class="form-control top" id="fname" placeholder="First Name" name="fname" required>
+                <label class="placeHolder" for="fname">First Name</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="text" class="form-control middle" id="lname" placeholder="Last Name" name="lname" required>
+                <label class="placeHolder" for="lname">Last Name</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="email" class="form-control bottom" id="email" placeholder="email" name="email" required>
+                <label class="placeHolder" for="email">Email</label>
+            </div>
+
+            
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Me Up!</button>
+            <p class="mt-1 mb-3 text-muted">&copy; Deathlok</p>
+        </form>
+    </main>
+    
+    <%- include('partials/footer') -%>
